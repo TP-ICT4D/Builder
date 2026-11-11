@@ -1,0 +1,23 @@
+public class MonteurPizzaPiquante implements MonteurPizza {
+    private Pizza pizza = new Pizza();
+
+    @Override
+    public void monterPate() {
+        pizza.setPate("feuilletee");
+    }
+
+    @Override
+    public void monterSauce() {
+        pizza.setSauce("piquante");
+    }
+
+    @Override
+    public void monterGarniture() {
+        pizza.setGarniture("pepperoni+salami");
+    }
+
+    @Override
+    public Pizza getPizza() {
+        return pizza;
+    }
+}
